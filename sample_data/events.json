@@ -1,0 +1,32 @@
+[
+  {
+    "id": "E7-AC",
+    "type": "AIRCRAFT_OUT",
+    "time": 15,
+    "target_id": "AC020",
+    "sector": null,
+    "duration": null,
+    "severity": 0,
+    "payload": {}
+  },
+  {
+    "id": "E7-CR",
+    "type": "CREW_OUT",
+    "time": 15,
+    "target_id": "CR028",
+    "sector": null,
+    "duration": 24,
+    "severity": 0,
+    "payload": {}
+  },
+  {
+    "id": "E7-WX",
+    "type": "WEATHER",
+    "time": 15,
+    "target_id": null,
+    "sector": "BRAVO",
+    "duration": 12,
+    "severity": 5,
+    "payload": {}
+  }
+]
