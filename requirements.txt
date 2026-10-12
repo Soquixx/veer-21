@@ -1,3 +1,18 @@
+# Engine dependencies
 ortools>=9.9
 numpy>=1.26
-pytest>=8
+pandas>=2.0
+pydantic>=2.0
+pytest>=8.0
+
+# Backend & Settings
+pydantic-settings>=2.0.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.6
+httpx>=0.24.0
+websockets>=11.0
