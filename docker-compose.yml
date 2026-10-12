@@ -1,0 +1,46 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: airops-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: airops
+      POSTGRES_USER: airops
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-local-only}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airops -d airops"]
+      interval: 3s
+      timeout: 3s
+      retries: 15
+    volumes:
+      - airops_pgdata:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5432:5432"        # localhost only; change the left side if 5432 is taken
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: airops-api
+    restart: unless-stopped
+    environment:
+      AIROPS_ENVIRONMENT: ${AIROPS_ENVIRONMENT:-development}
+      # use only URL-safe characters in POSTGRES_PASSWORD
+      AIROPS_DATABASE_URL: postgresql+psycopg://airops:${POSTGRES_PASSWORD:-change-me-local-only}@db:5432/airops
+      AIROPS_JWT_SECRET: ${AIROPS_JWT_SECRET:-CHANGE-ME-LOCAL-SECRET-32-CHARS-MINIMUM}
+      AIROPS_SAMPLE_DATA_DIR: /app/sample_data
+      AIROPS_BENCHMARK_DIR: /app/evaluation/results
+      AIROPS_CORS_ORIGINS: ${AIROPS_CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+      AIROPS_SERVE_FIXTURES: ${AIROPS_SERVE_FIXTURES:-true}
+      AIROPS_WEATHER_PROVIDER: simulated
+    volumes:
+      - ./sample_data:/app/sample_data:ro                 # regenerate fixtures without rebuilding
+      - ./evaluation/results:/app/evaluation/results:ro   # benchmark CSVs for /api/evaluation
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+
+volumes:
+  airops_pgdata:
