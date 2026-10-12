@@ -1,0 +1,4420 @@
+{
+  "impact": {
+    "directly_affected": [
+      "M002",
+      "M004",
+      "M005",
+      "M008",
+      "M009",
+      "M022",
+      "M031",
+      "M037",
+      "M039",
+      "M047"
+    ],
+    "ripple": [
+      "M010",
+      "M033",
+      "M038",
+      "M040",
+      "M042",
+      "M043",
+      "M046"
+    ],
+    "reasons": {
+      "M004": [
+        "WEATHER"
+      ],
+      "M039": [
+        "WEATHER"
+      ],
+      "M047": [
+        "WEATHER"
+      ],
+      "M002": [
+        "CREW_OUTAGE",
+        "WEATHER"
+      ],
+      "M009": [
+        "WEATHER"
+      ],
+      "M008": [
+        "WEATHER"
+      ],
+      "M005": [
+        "WEATHER"
+      ],
+      "M022": [
+        "AIRCRAFT_OUTAGE"
+      ],
+      "M031": [
+        "CREW_OUTAGE"
+      ],
+      "M037": [
+        "AIRCRAFT_OUTAGE"
+      ]
+    },
+    "resources": {
+      "aircraft": [
+        "AC006",
+        "AC011",
+        "AC015",
+        "AC016",
+        "AC019",
+        "AC020",
+        "AC023",
+        "AC024"
+      ],
+      "crew": [
+        "CR007",
+        "CR008",
+        "CR013",
+        "CR015",
+        "CR025",
+        "CR027",
+        "CR028",
+        "CR029",
+        "CR033"
+      ],
+      "bases": [
+        "BASE-A",
+        "BASE-B",
+        "BASE-C"
+      ]
+    },
+    "value_at_risk": 411,
+    "violations": [
+      {
+        "kind": "WEATHER",
+        "mission_id": "M004",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M039",
+        "detail": "weather above limit 2 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M047",
+        "detail": "weather above limit 2 in BRAVO"
+      },
+      {
+        "kind": "CREW_OUTAGE",
+        "mission_id": "M002",
+        "detail": "CR028 unavailable during sortie"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M002",
+        "detail": "weather above limit 2 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M009",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M008",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M005",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "AIRCRAFT_OUTAGE",
+        "mission_id": "M022",
+        "detail": "AC020 unavailable during sortie"
+      },
+      {
+        "kind": "CREW_OUTAGE",
+        "mission_id": "M031",
+        "detail": "CR028 unavailable during sortie"
+      },
+      {
+        "kind": "AIRCRAFT_OUTAGE",
+        "mission_id": "M037",
+        "detail": "AC020 unavailable during sortie"
+      }
+    ]
+  },
+  "baseline_greedy_patch": {
+    "metrics": {
+      "value": 2025,
+      "value_retained": 0.8842794759825328,
+      "missions": 47,
+      "sorties_changed": 10,
+      "stability": 0.75,
+      "solve_ms": 3.3866000012494624,
+      "violations": 0,
+      "robustness": null
+    },
+    "plan": {
+      "assignments": [
+        {
+          "mission_id": "M000",
+          "aircraft_id": "AC006",
+          "crew_id": "CR002",
+          "start": 8,
+          "locked": false
+        },
+        {
+          "mission_id": "M011",
+          "aircraft_id": "AC011",
+          "crew_id": "CR031",
+          "start": 8,
+          "locked": false
+        },
+        {
+          "mission_id": "M045",
+          "aircraft_id": "AC014",
+          "crew_id": "CR035",
+          "start": 8,
+          "locked": false
+        },
+        {
+          "mission_id": "M023",
+          "aircraft_id": "AC015",
+          "crew_id": "CR006",
+          "start": 9,
+          "locked": false
+        },
+        {
+          "mission_id": "M049",
+          "aircraft_id": "AC023",
+          "crew_id": "CR027",
+          "start": 9,
+          "locked": false
+        },
+        {
+          "mission_id": "M006",
+          "aircraft_id": "AC019",
+          "crew_id": "CR014",
+          "start": 10,
+          "locked": false
+        },
+        {
+          "mission_id": "M015",
+          "aircraft_id": "AC009",
+          "crew_id": "CR001",
+          "start": 10,
+          "locked": false
+        },
+        {
+          "mission_id": "M012",
+          "aircraft_id": "AC020",
+          "crew_id": "CR026",
+          "start": 11,
+          "locked": false
+        },
+        {
+          "mission_id": "M028",
+          "aircraft_id": "AC000",
+          "crew_id": "CR010",
+          "start": 11,
+          "locked": false
+        },
+        {
+          "mission_id": "M044",
+          "aircraft_id": "AC022",
+          "crew_id": "CR023",
+          "start": 11,
+          "locked": false
+        },
+        {
+          "mission_id": "M007",
+          "aircraft_id": "AC021",
+          "crew_id": "CR009",
+          "start": 12,
+          "locked": false
+        },
+        {
+          "mission_id": "M024",
+          "aircraft_id": "AC002",
+          "crew_id": "CR028",
+          "start": 12,
+          "locked": false
+        },
+        {
+          "mission_id": "M035",
+          "aircraft_id": "AC016",
+          "crew_id": "CR024",
+          "start": 12,
+          "locked": false
+        },
+        {
+          "mission_id": "M013",
+          "aircraft_id": "AC005",
+          "crew_id": "CR034",
+          "start": 15,
+          "locked": false
+        },
+        {
+          "mission_id": "M030",
+          "aircraft_id": "AC018",
+          "crew_id": "CR007",
+          "start": 16,
+          "locked": false
+        },
+        {
+          "mission_id": "M020",
+          "aircraft_id": "AC017",
+          "crew_id": "CR032",
+          "start": 17,
+          "locked": false
+        },
+        {
+          "mission_id": "M034",
+          "aircraft_id": "AC024",
+          "crew_id": "CR013",
+          "start": 17,
+          "locked": false
+        },
+        {
+          "mission_id": "M027",
+          "aircraft_id": "AC010",
+          "crew_id": "CR017",
+          "start": 18,
+          "locked": false
+        },
+        {
+          "mission_id": "M032",
+          "aircraft_id": "AC004",
+          "crew_id": "CR021",
+          "start": 18,
+          "locked": false
+        },
+        {
+          "mission_id": "M036",
+          "aircraft_id": "AC009",
+          "crew_id": "CR001",
+          "start": 18,
+          "locked": false
+        },
+        {
+          "mission_id": "M029",
+          "aircraft_id": "AC012",
+          "crew_id": "CR005",
+          "start": 21,
+          "locked": false
+        },
+        {
+          "mission_id": "M021",
+          "aircraft_id": "AC002",
+          "crew_id": "CR033",
+          "start": 22,
+          "locked": false
+        },
+        {
+          "mission_id": "M022",
+          "aircraft_id": "AC019",
+          "crew_id": "CR020",
+          "start": 22,
+          "locked": false
+        },
+        {
+          "mission_id": "M041",
+          "aircraft_id": "AC007",
+          "crew_id": "CR022",
+          "start": 22,
+          "locked": false
+        },
+        {
+          "mission_id": "M003",
+          "aircraft_id": "AC018",
+          "crew_id": "CR003",
+          "start": 23,
+          "locked": false
+        },
+        {
+          "mission_id": "TRAP1-A",
+          "aircraft_id": "TAC1F",
+          "crew_id": "TCR1Y",
+          "start": 23,
+          "locked": false
+        },
+        {
+          "mission_id": "TRAP1-B",
+          "aircraft_id": "TAC1I",
+          "crew_id": "TCR1X",
+          "start": 23,
+          "locked": false
+        },
+        {
+          "mission_id": "M016",
+          "aircraft_id": "AC014",
+          "crew_id": "CR036",
+          "start": 25,
+          "locked": false
+        },
+        {
+          "mission_id": "M001",
+          "aircraft_id": "AC012",
+          "crew_id": "CR005",
+          "start": 26,
+          "locked": false
+        },
+        {
+          "mission_id": "M005",
+          "aircraft_id": "AC016",
+          "crew_id": "CR025",
+          "start": 27,
+          "locked": false
+        },
+        {
+          "mission_id": "M009",
+          "aircraft_id": "AC023",
+          "crew_id": "CR029",
+          "start": 27,
+          "locked": false
+        },
+        {
+          "mission_id": "M026",
+          "aircraft_id": "AC017",
+          "crew_id": "CR030",
+          "start": 28,
+          "locked": false
+        },
+        {
+          "mission_id": "M038",
+          "aircraft_id": "AC011",
+          "crew_id": "CR026",
+          "start": 29,
+          "locked": false
+        },
+        {
+          "mission_id": "M042",
+          "aircraft_id": "AC006",
+          "crew_id": "CR000",
+          "start": 29,
+          "locked": false
+        },
+        {
+          "mission_id": "M046",
+          "aircraft_id": "AC021",
+          "crew_id": "CR008",
+          "start": 29,
+          "locked": false
+        },
+        {
+          "mission_id": "M018",
+          "aircraft_id": "AC000",
+          "crew_id": "CR012",
+          "start": 30,
+          "locked": false
+        },
+        {
+          "mission_id": "M033",
+          "aircraft_id": "AC013",
+          "crew_id": "CR015",
+          "start": 30,
+          "locked": false
+        },
+        {
+          "mission_id": "M019",
+          "aircraft_id": "AC009",
+          "crew_id": "CR002",
+          "start": 31,
+          "locked": false
+        },
+        {
+          "mission_id": "M043",
+          "aircraft_id": "AC019",
+          "crew_id": "CR016",
+          "start": 31,
+          "locked": false
+        },
+        {
+          "mission_id": "M048",
+          "aircraft_id": "AC004",
+          "crew_id": "CR021",
+          "start": 31,
+          "locked": false
+        },
+        {
+          "mission_id": "TRAP1-C",
+          "aircraft_id": "TAC1I",
+          "crew_id": "TCR1X",
+          "start": 31,
+          "locked": false
+        },
+        {
+          "mission_id": "M010",
+          "aircraft_id": "AC002",
+          "crew_id": "CR027",
+          "start": 32,
+          "locked": false
+        },
+        {
+          "mission_id": "M025",
+          "aircraft_id": "AC003",
+          "crew_id": "CR006",
+          "start": 32,
+          "locked": false
+        },
+        {
+          "mission_id": "M040",
+          "aircraft_id": "AC024",
+          "crew_id": "CR011",
+          "start": 32,
+          "locked": false
+        },
+        {
+          "mission_id": "TRAP0-A",
+          "aircraft_id": "TAC0F",
+          "crew_id": "TCR0Y",
+          "start": 38,
+          "locked": false
+        },
+        {
+          "mission_id": "TRAP0-B",
+          "aircraft_id": "TAC0I",
+          "crew_id": "TCR0X",
+          "start": 38,
+          "locked": false
+        },
+        {
+          "mission_id": "TRAP0-C",
+          "aircraft_id": "TAC0I",
+          "crew_id": "TCR0X",
+          "start": 46,
+          "locked": false
+        }
+      ],
+      "dropped": [
+        "M002",
+        "M004",
+        "M008",
+        "M014",
+        "M017",
+        "M031",
+        "M037",
+        "M039",
+        "M047"
+      ],
+      "reasons": {
+        "M002": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+        "M004": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+        "M008": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+        "M014": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+        "M017": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+        "M031": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+        "M037": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+        "M039": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+        "M047": "no hazard-free start slot inside the mission window (weather / threat / timing)"
+      },
+      "score": 17845.0,
+      "value": 2025,
+      "violations": [],
+      "status": "GREEDY",
+      "solve_ms": 0.73,
+      "meta": {}
+    }
+  },
+  "options": [
+    {
+      "label": "A_max_value",
+      "plan": {
+        "assignments": [
+          {
+            "mission_id": "M000",
+            "aircraft_id": "AC006",
+            "crew_id": "CR002",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M011",
+            "aircraft_id": "AC011",
+            "crew_id": "CR031",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M045",
+            "aircraft_id": "AC014",
+            "crew_id": "CR035",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M023",
+            "aircraft_id": "AC015",
+            "crew_id": "CR006",
+            "start": 9,
+            "locked": true
+          },
+          {
+            "mission_id": "M049",
+            "aircraft_id": "AC023",
+            "crew_id": "CR027",
+            "start": 9,
+            "locked": true
+          },
+          {
+            "mission_id": "M006",
+            "aircraft_id": "AC019",
+            "crew_id": "CR014",
+            "start": 10,
+            "locked": true
+          },
+          {
+            "mission_id": "M015",
+            "aircraft_id": "AC009",
+            "crew_id": "CR001",
+            "start": 10,
+            "locked": true
+          },
+          {
+            "mission_id": "M012",
+            "aircraft_id": "AC020",
+            "crew_id": "CR026",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M028",
+            "aircraft_id": "AC000",
+            "crew_id": "CR010",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M044",
+            "aircraft_id": "AC022",
+            "crew_id": "CR023",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M007",
+            "aircraft_id": "AC021",
+            "crew_id": "CR009",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M024",
+            "aircraft_id": "AC002",
+            "crew_id": "CR028",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M035",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M013",
+            "aircraft_id": "AC005",
+            "crew_id": "CR034",
+            "start": 15,
+            "locked": true
+          },
+          {
+            "mission_id": "M030",
+            "aircraft_id": "AC018",
+            "crew_id": "CR007",
+            "start": 16,
+            "locked": true
+          },
+          {
+            "mission_id": "M020",
+            "aircraft_id": "AC017",
+            "crew_id": "CR032",
+            "start": 17,
+            "locked": true
+          },
+          {
+            "mission_id": "M034",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 17,
+            "locked": false
+          },
+          {
+            "mission_id": "M027",
+            "aircraft_id": "AC010",
+            "crew_id": "CR017",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M032",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M036",
+            "aircraft_id": "AC009",
+            "crew_id": "CR001",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M029",
+            "aircraft_id": "AC012",
+            "crew_id": "CR005",
+            "start": 21,
+            "locked": false
+          },
+          {
+            "mission_id": "M021",
+            "aircraft_id": "AC002",
+            "crew_id": "CR033",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M022",
+            "aircraft_id": "AC019",
+            "crew_id": "CR020",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M041",
+            "aircraft_id": "AC007",
+            "crew_id": "CR022",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M003",
+            "aircraft_id": "AC018",
+            "crew_id": "CR003",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "M038",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-A",
+            "aircraft_id": "TAC1F",
+            "crew_id": "TCR1Y",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-B",
+            "aircraft_id": "TAC1I",
+            "crew_id": "TCR1X",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "M014",
+            "aircraft_id": "AC011",
+            "crew_id": "CR031",
+            "start": 24,
+            "locked": false
+          },
+          {
+            "mission_id": "M016",
+            "aircraft_id": "AC014",
+            "crew_id": "CR036",
+            "start": 25,
+            "locked": false
+          },
+          {
+            "mission_id": "M048",
+            "aircraft_id": "AC015",
+            "crew_id": "CR006",
+            "start": 25,
+            "locked": false
+          },
+          {
+            "mission_id": "M001",
+            "aircraft_id": "AC012",
+            "crew_id": "CR005",
+            "start": 26,
+            "locked": false
+          },
+          {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 27,
+            "locked": false
+          },
+          {
+            "mission_id": "M009",
+            "aircraft_id": "AC023",
+            "crew_id": "CR030",
+            "start": 27,
+            "locked": false
+          },
+          {
+            "mission_id": "M042",
+            "aircraft_id": "AC017",
+            "crew_id": "CR026",
+            "start": 28,
+            "locked": false
+          },
+          {
+            "mission_id": "M046",
+            "aircraft_id": "AC021",
+            "crew_id": "CR008",
+            "start": 29,
+            "locked": false
+          },
+          {
+            "mission_id": "M018",
+            "aircraft_id": "AC000",
+            "crew_id": "CR012",
+            "start": 30,
+            "locked": false
+          },
+          {
+            "mission_id": "M033",
+            "aircraft_id": "AC013",
+            "crew_id": "CR015",
+            "start": 30,
+            "locked": false
+          },
+          {
+            "mission_id": "M019",
+            "aircraft_id": "AC009",
+            "crew_id": "CR002",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M025",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M043",
+            "aircraft_id": "AC019",
+            "crew_id": "CR016",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-C",
+            "aircraft_id": "TAC1I",
+            "crew_id": "TCR1X",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M010",
+            "aircraft_id": "AC002",
+            "crew_id": "CR027",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M040",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M031",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 33,
+            "locked": false
+          },
+          {
+            "mission_id": "M037",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 33,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-A",
+            "aircraft_id": "TAC0F",
+            "crew_id": "TCR0Y",
+            "start": 38,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-B",
+            "aircraft_id": "TAC0I",
+            "crew_id": "TCR0X",
+            "start": 38,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-C",
+            "aircraft_id": "TAC0I",
+            "crew_id": "TCR0X",
+            "start": 46,
+            "locked": false
+          }
+        ],
+        "dropped": [
+          "M002",
+          "M004",
+          "M008",
+          "M017",
+          "M026",
+          "M039",
+          "M047"
+        ],
+        "reasons": {
+          "M002": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M004": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M008": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M017": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M026": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+          "M039": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M047": "no hazard-free start slot inside the mission window (weather / threat / timing)"
+        },
+        "score": 19357.0,
+        "value": 2108,
+        "violations": [],
+        "status": "OPTIMAL",
+        "solve_ms": 461.11,
+        "meta": {
+          "modeled_missions": 31,
+          "objective": 13313.0,
+          "bound": 13321.0
+        }
+      },
+      "metrics": {
+        "value": 2108,
+        "value_retained": 0.9205240174672489,
+        "missions": 49,
+        "sorties_changed": 15,
+        "stability": 0.625,
+        "solve_ms": 468.070799999623,
+        "violations": 0,
+        "robustness": 92.15132827324479
+      },
+      "changes": [
+        {
+          "mission_id": "M004",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M004",
+            "aircraft_id": "AC023",
+            "crew_id": "CR027",
+            "start": 19,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M039",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M039",
+            "aircraft_id": "AC024",
+            "crew_id": "CR013",
+            "start": 20,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M047",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M047",
+            "aircraft_id": "AC006",
+            "crew_id": "CR008",
+            "start": 20,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M002",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M002",
+            "aircraft_id": "AC011",
+            "crew_id": "CR028",
+            "start": 21,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M009",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M009",
+            "aircraft_id": "AC019",
+            "crew_id": "CR015",
+            "start": 23,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M009",
+            "aircraft_id": "AC023",
+            "crew_id": "CR030",
+            "start": 27,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M008",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M008",
+            "aircraft_id": "AC015",
+            "crew_id": "CR007",
+            "start": 25,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M005",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR025",
+            "start": 26,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 27,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M022",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M022",
+            "aircraft_id": "AC020",
+            "crew_id": "CR029",
+            "start": 26,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M022",
+            "aircraft_id": "AC019",
+            "crew_id": "CR020",
+            "start": 22,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M026",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M026",
+            "aircraft_id": "AC017",
+            "crew_id": "CR030",
+            "start": 28,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M031",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M031",
+            "aircraft_id": "AC023",
+            "crew_id": "CR028",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M031",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 33,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M038",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M038",
+            "aircraft_id": "AC011",
+            "crew_id": "CR026",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M038",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 23,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M042",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M042",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M042",
+            "aircraft_id": "AC017",
+            "crew_id": "CR026",
+            "start": 28,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M048",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M048",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 31,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M048",
+            "aircraft_id": "AC015",
+            "crew_id": "CR006",
+            "start": 25,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M025",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M025",
+            "aircraft_id": "AC003",
+            "crew_id": "CR006",
+            "start": 32,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M025",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 31,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M037",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M037",
+            "aircraft_id": "AC020",
+            "crew_id": "CR033",
+            "start": 34,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M037",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 33,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M034",
+          "change": "added",
+          "before": null,
+          "after": {
+            "mission_id": "M034",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 17,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M014",
+          "change": "added",
+          "before": null,
+          "after": {
+            "mission_id": "M014",
+            "aircraft_id": "AC011",
+            "crew_id": "CR031",
+            "start": 24,
+            "locked": false
+          }
+        }
+      ]
+    },
+    {
+      "label": "B_balanced",
+      "plan": {
+        "assignments": [
+          {
+            "mission_id": "M000",
+            "aircraft_id": "AC006",
+            "crew_id": "CR002",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M011",
+            "aircraft_id": "AC011",
+            "crew_id": "CR031",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M045",
+            "aircraft_id": "AC014",
+            "crew_id": "CR035",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M023",
+            "aircraft_id": "AC015",
+            "crew_id": "CR006",
+            "start": 9,
+            "locked": true
+          },
+          {
+            "mission_id": "M049",
+            "aircraft_id": "AC023",
+            "crew_id": "CR027",
+            "start": 9,
+            "locked": true
+          },
+          {
+            "mission_id": "M006",
+            "aircraft_id": "AC019",
+            "crew_id": "CR014",
+            "start": 10,
+            "locked": true
+          },
+          {
+            "mission_id": "M015",
+            "aircraft_id": "AC009",
+            "crew_id": "CR001",
+            "start": 10,
+            "locked": true
+          },
+          {
+            "mission_id": "M012",
+            "aircraft_id": "AC020",
+            "crew_id": "CR026",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M028",
+            "aircraft_id": "AC000",
+            "crew_id": "CR010",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M044",
+            "aircraft_id": "AC022",
+            "crew_id": "CR023",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M007",
+            "aircraft_id": "AC021",
+            "crew_id": "CR009",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M024",
+            "aircraft_id": "AC002",
+            "crew_id": "CR028",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M035",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M013",
+            "aircraft_id": "AC005",
+            "crew_id": "CR034",
+            "start": 15,
+            "locked": true
+          },
+          {
+            "mission_id": "M030",
+            "aircraft_id": "AC018",
+            "crew_id": "CR007",
+            "start": 16,
+            "locked": true
+          },
+          {
+            "mission_id": "M020",
+            "aircraft_id": "AC017",
+            "crew_id": "CR032",
+            "start": 17,
+            "locked": true
+          },
+          {
+            "mission_id": "M034",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 17,
+            "locked": false
+          },
+          {
+            "mission_id": "M027",
+            "aircraft_id": "AC010",
+            "crew_id": "CR017",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M032",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M036",
+            "aircraft_id": "AC009",
+            "crew_id": "CR001",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M029",
+            "aircraft_id": "AC012",
+            "crew_id": "CR005",
+            "start": 21,
+            "locked": false
+          },
+          {
+            "mission_id": "M021",
+            "aircraft_id": "AC002",
+            "crew_id": "CR033",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M022",
+            "aircraft_id": "AC019",
+            "crew_id": "CR020",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M041",
+            "aircraft_id": "AC007",
+            "crew_id": "CR022",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M003",
+            "aircraft_id": "AC018",
+            "crew_id": "CR003",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "M038",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-A",
+            "aircraft_id": "TAC1F",
+            "crew_id": "TCR1Y",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-B",
+            "aircraft_id": "TAC1I",
+            "crew_id": "TCR1X",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "M014",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 24,
+            "locked": false
+          },
+          {
+            "mission_id": "M016",
+            "aircraft_id": "AC014",
+            "crew_id": "CR036",
+            "start": 25,
+            "locked": false
+          },
+          {
+            "mission_id": "M042",
+            "aircraft_id": "AC023",
+            "crew_id": "CR026",
+            "start": 25,
+            "locked": false
+          },
+          {
+            "mission_id": "M001",
+            "aircraft_id": "AC012",
+            "crew_id": "CR005",
+            "start": 26,
+            "locked": false
+          },
+          {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 27,
+            "locked": false
+          },
+          {
+            "mission_id": "M026",
+            "aircraft_id": "AC017",
+            "crew_id": "CR030",
+            "start": 28,
+            "locked": false
+          },
+          {
+            "mission_id": "M046",
+            "aircraft_id": "AC021",
+            "crew_id": "CR008",
+            "start": 29,
+            "locked": false
+          },
+          {
+            "mission_id": "M018",
+            "aircraft_id": "AC000",
+            "crew_id": "CR012",
+            "start": 30,
+            "locked": false
+          },
+          {
+            "mission_id": "M033",
+            "aircraft_id": "AC013",
+            "crew_id": "CR015",
+            "start": 30,
+            "locked": false
+          },
+          {
+            "mission_id": "M019",
+            "aircraft_id": "AC009",
+            "crew_id": "CR002",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M043",
+            "aircraft_id": "AC019",
+            "crew_id": "CR016",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M048",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-C",
+            "aircraft_id": "TAC1I",
+            "crew_id": "TCR1X",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M010",
+            "aircraft_id": "AC002",
+            "crew_id": "CR027",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M025",
+            "aircraft_id": "AC003",
+            "crew_id": "CR006",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M040",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M031",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 33,
+            "locked": false
+          },
+          {
+            "mission_id": "M037",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 33,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-A",
+            "aircraft_id": "TAC0F",
+            "crew_id": "TCR0Y",
+            "start": 38,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-B",
+            "aircraft_id": "TAC0I",
+            "crew_id": "TCR0X",
+            "start": 38,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-C",
+            "aircraft_id": "TAC0I",
+            "crew_id": "TCR0X",
+            "start": 46,
+            "locked": false
+          }
+        ],
+        "dropped": [
+          "M002",
+          "M004",
+          "M008",
+          "M009",
+          "M017",
+          "M039",
+          "M047"
+        ],
+        "reasons": {
+          "M002": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M004": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M008": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M009": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+          "M017": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M039": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M047": "no hazard-free start slot inside the mission window (weather / threat / timing)"
+        },
+        "score": 20490.0,
+        "value": 2095,
+        "violations": [],
+        "status": "OPTIMAL",
+        "solve_ms": 438.31,
+        "meta": {
+          "modeled_missions": 31,
+          "objective": 13876.0,
+          "bound": 13942.0
+        }
+      },
+      "metrics": {
+        "value": 2095,
+        "value_retained": 0.9148471615720524,
+        "missions": 49,
+        "sorties_changed": 12,
+        "stability": 0.7,
+        "solve_ms": 445.0730000007752,
+        "violations": 0,
+        "robustness": 93.6109785202864
+      },
+      "changes": [
+        {
+          "mission_id": "M004",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M004",
+            "aircraft_id": "AC023",
+            "crew_id": "CR027",
+            "start": 19,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M039",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M039",
+            "aircraft_id": "AC024",
+            "crew_id": "CR013",
+            "start": 20,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M047",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M047",
+            "aircraft_id": "AC006",
+            "crew_id": "CR008",
+            "start": 20,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M002",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M002",
+            "aircraft_id": "AC011",
+            "crew_id": "CR028",
+            "start": 21,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M009",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M009",
+            "aircraft_id": "AC019",
+            "crew_id": "CR015",
+            "start": 23,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M008",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M008",
+            "aircraft_id": "AC015",
+            "crew_id": "CR007",
+            "start": 25,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M005",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR025",
+            "start": 26,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 27,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M022",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M022",
+            "aircraft_id": "AC020",
+            "crew_id": "CR029",
+            "start": 26,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M022",
+            "aircraft_id": "AC019",
+            "crew_id": "CR020",
+            "start": 22,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M031",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M031",
+            "aircraft_id": "AC023",
+            "crew_id": "CR028",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M031",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 33,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M038",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M038",
+            "aircraft_id": "AC011",
+            "crew_id": "CR026",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M038",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 23,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M042",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M042",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M042",
+            "aircraft_id": "AC023",
+            "crew_id": "CR026",
+            "start": 25,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M037",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M037",
+            "aircraft_id": "AC020",
+            "crew_id": "CR033",
+            "start": 34,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M037",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 33,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M034",
+          "change": "added",
+          "before": null,
+          "after": {
+            "mission_id": "M034",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 17,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M014",
+          "change": "added",
+          "before": null,
+          "after": {
+            "mission_id": "M014",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 24,
+            "locked": false
+          }
+        }
+      ]
+    },
+    {
+      "label": "C_stable",
+      "plan": {
+        "assignments": [
+          {
+            "mission_id": "M000",
+            "aircraft_id": "AC006",
+            "crew_id": "CR002",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M011",
+            "aircraft_id": "AC011",
+            "crew_id": "CR031",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M045",
+            "aircraft_id": "AC014",
+            "crew_id": "CR035",
+            "start": 8,
+            "locked": true
+          },
+          {
+            "mission_id": "M023",
+            "aircraft_id": "AC015",
+            "crew_id": "CR006",
+            "start": 9,
+            "locked": true
+          },
+          {
+            "mission_id": "M049",
+            "aircraft_id": "AC023",
+            "crew_id": "CR027",
+            "start": 9,
+            "locked": true
+          },
+          {
+            "mission_id": "M006",
+            "aircraft_id": "AC019",
+            "crew_id": "CR014",
+            "start": 10,
+            "locked": true
+          },
+          {
+            "mission_id": "M015",
+            "aircraft_id": "AC009",
+            "crew_id": "CR001",
+            "start": 10,
+            "locked": true
+          },
+          {
+            "mission_id": "M012",
+            "aircraft_id": "AC020",
+            "crew_id": "CR026",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M028",
+            "aircraft_id": "AC000",
+            "crew_id": "CR010",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M044",
+            "aircraft_id": "AC022",
+            "crew_id": "CR023",
+            "start": 11,
+            "locked": true
+          },
+          {
+            "mission_id": "M007",
+            "aircraft_id": "AC021",
+            "crew_id": "CR009",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M024",
+            "aircraft_id": "AC002",
+            "crew_id": "CR028",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M035",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 12,
+            "locked": true
+          },
+          {
+            "mission_id": "M013",
+            "aircraft_id": "AC005",
+            "crew_id": "CR034",
+            "start": 15,
+            "locked": true
+          },
+          {
+            "mission_id": "M030",
+            "aircraft_id": "AC018",
+            "crew_id": "CR007",
+            "start": 16,
+            "locked": true
+          },
+          {
+            "mission_id": "M020",
+            "aircraft_id": "AC017",
+            "crew_id": "CR032",
+            "start": 17,
+            "locked": true
+          },
+          {
+            "mission_id": "M034",
+            "aircraft_id": "AC024",
+            "crew_id": "CR013",
+            "start": 17,
+            "locked": false
+          },
+          {
+            "mission_id": "M027",
+            "aircraft_id": "AC010",
+            "crew_id": "CR017",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M032",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M036",
+            "aircraft_id": "AC009",
+            "crew_id": "CR001",
+            "start": 18,
+            "locked": true
+          },
+          {
+            "mission_id": "M029",
+            "aircraft_id": "AC012",
+            "crew_id": "CR005",
+            "start": 21,
+            "locked": false
+          },
+          {
+            "mission_id": "M021",
+            "aircraft_id": "AC002",
+            "crew_id": "CR033",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M022",
+            "aircraft_id": "AC019",
+            "crew_id": "CR015",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M041",
+            "aircraft_id": "AC007",
+            "crew_id": "CR022",
+            "start": 22,
+            "locked": false
+          },
+          {
+            "mission_id": "M003",
+            "aircraft_id": "AC018",
+            "crew_id": "CR003",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "M038",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-A",
+            "aircraft_id": "TAC1F",
+            "crew_id": "TCR1Y",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-B",
+            "aircraft_id": "TAC1I",
+            "crew_id": "TCR1X",
+            "start": 23,
+            "locked": false
+          },
+          {
+            "mission_id": "M016",
+            "aircraft_id": "AC014",
+            "crew_id": "CR036",
+            "start": 25,
+            "locked": false
+          },
+          {
+            "mission_id": "M001",
+            "aircraft_id": "AC012",
+            "crew_id": "CR005",
+            "start": 26,
+            "locked": false
+          },
+          {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 27,
+            "locked": false
+          },
+          {
+            "mission_id": "M009",
+            "aircraft_id": "AC023",
+            "crew_id": "CR032",
+            "start": 27,
+            "locked": false
+          },
+          {
+            "mission_id": "M026",
+            "aircraft_id": "AC017",
+            "crew_id": "CR030",
+            "start": 28,
+            "locked": false
+          },
+          {
+            "mission_id": "M042",
+            "aircraft_id": "AC006",
+            "crew_id": "CR000",
+            "start": 29,
+            "locked": false
+          },
+          {
+            "mission_id": "M046",
+            "aircraft_id": "AC021",
+            "crew_id": "CR008",
+            "start": 29,
+            "locked": false
+          },
+          {
+            "mission_id": "M018",
+            "aircraft_id": "AC000",
+            "crew_id": "CR012",
+            "start": 30,
+            "locked": false
+          },
+          {
+            "mission_id": "M033",
+            "aircraft_id": "AC013",
+            "crew_id": "CR015",
+            "start": 30,
+            "locked": false
+          },
+          {
+            "mission_id": "M019",
+            "aircraft_id": "AC009",
+            "crew_id": "CR002",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M043",
+            "aircraft_id": "AC019",
+            "crew_id": "CR016",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M048",
+            "aircraft_id": "AC004",
+            "crew_id": "CR021",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP1-C",
+            "aircraft_id": "TAC1I",
+            "crew_id": "TCR1X",
+            "start": 31,
+            "locked": false
+          },
+          {
+            "mission_id": "M010",
+            "aircraft_id": "AC002",
+            "crew_id": "CR027",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M025",
+            "aircraft_id": "AC003",
+            "crew_id": "CR006",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M040",
+            "aircraft_id": "AC024",
+            "crew_id": "CR011",
+            "start": 32,
+            "locked": false
+          },
+          {
+            "mission_id": "M037",
+            "aircraft_id": "AC011",
+            "crew_id": "CR033",
+            "start": 33,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-A",
+            "aircraft_id": "TAC0F",
+            "crew_id": "TCR0Y",
+            "start": 38,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-B",
+            "aircraft_id": "TAC0I",
+            "crew_id": "TCR0X",
+            "start": 38,
+            "locked": false
+          },
+          {
+            "mission_id": "TRAP0-C",
+            "aircraft_id": "TAC0I",
+            "crew_id": "TCR0X",
+            "start": 46,
+            "locked": false
+          }
+        ],
+        "dropped": [
+          "M002",
+          "M004",
+          "M008",
+          "M014",
+          "M017",
+          "M031",
+          "M039",
+          "M047"
+        ],
+        "reasons": {
+          "M002": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M004": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M008": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M014": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+          "M017": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M031": "capacity: every compatible aircraft or crew is committed to higher-value work in this window",
+          "M039": "no hazard-free start slot inside the mission window (weather / threat / timing)",
+          "M047": "no hazard-free start slot inside the mission window (weather / threat / timing)"
+        },
+        "score": 21027.0,
+        "value": 2084,
+        "violations": [],
+        "status": "OPTIMAL",
+        "solve_ms": 512.18,
+        "meta": {
+          "modeled_missions": 31,
+          "objective": 13947.0,
+          "bound": 14001.0
+        }
+      },
+      "metrics": {
+        "value": 2084,
+        "value_retained": 0.9100436681222708,
+        "missions": 48,
+        "sorties_changed": 11,
+        "stability": 0.725,
+        "solve_ms": 520.4625000005763,
+        "violations": 0,
+        "robustness": 94.23624440179142
+      },
+      "changes": [
+        {
+          "mission_id": "M004",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M004",
+            "aircraft_id": "AC023",
+            "crew_id": "CR027",
+            "start": 19,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M039",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M039",
+            "aircraft_id": "AC024",
+            "crew_id": "CR013",
+            "start": 20,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M047",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M047",
+            "aircraft_id": "AC006",
+            "crew_id": "CR008",
+            "start": 20,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M002",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M002",
+            "aircraft_id": "AC011",
+            "crew_id": "CR028",
+            "start": 21,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M009",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M009",
+            "aircraft_id": "AC019",
+            "crew_id": "CR015",
+            "start": 23,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M009",
+            "aircraft_id": "AC023",
+            "crew_id": "CR032",
+            "start": 27,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M008",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M008",
+            "aircraft_id": "AC015",
+            "crew_id": "CR007",
+            "start": 25,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M005",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR025",
+            "start": 26,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M005",
+            "aircraft_id": "AC016",
+            "crew_id": "CR024",
+            "start": 27,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M022",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M022",
+            "aircraft_id": "AC020",
+            "crew_id": "CR029",
+            "start": 26,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M022",
+            "aircraft_id": "AC019",
+            "crew_id": "CR015",
+            "start": 22,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M031",
+          "change": "dropped",
+          "before": {
+            "mission_id": "M031",
+            "aircraft_id": "AC023",
+            "crew_id": "CR028",
+            "start": 29,
+            "locked": false
+          },
+          "after": null
+        },
+        {
+          "mission_id": "M038",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M038",
+            "aircraft_id": "AC011",
+            "crew_id": "CR026",
+            "start": 29,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M038",
+            "aircraft_id": "AC011",
+            "crew_id": "CR029",
+            "start": 23,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M037",
+          "change": "reassigned",
+          "before": {
+            "mission_id": "M037",
+            "aircraft_id": "AC020",
+            "crew_id": "CR033",
+            "start": 34,
+            "locked": false
+          },
+          "after": {
+            "mission_id": "M037",
+            "aircraft_id": "AC011",
+            "crew_id": "CR033",
+            "start": 33,
+            "locked": false
+          }
+        },
+        {
+          "mission_id": "M034",
+          "change": "added",
+          "before": null,
+          "after": {
+            "mission_id": "M034",
+            "aircraft_id": "AC024",
+            "crew_id": "CR013",
+            "start": 17,
+            "locked": false
+          }
+        }
+      ]
+    }
+  ],
+  "state_after": {
+    "horizon": 96,
+    "bases": [
+      {
+        "id": "BASE-A",
+        "runway_capacity": 2,
+        "closures": []
+      },
+      {
+        "id": "BASE-B",
+        "runway_capacity": 2,
+        "closures": []
+      },
+      {
+        "id": "BASE-C",
+        "runway_capacity": 2,
+        "closures": []
+      },
+      {
+        "id": "TB0",
+        "runway_capacity": 2,
+        "closures": []
+      },
+      {
+        "id": "TB1",
+        "runway_capacity": 2,
+        "closures": []
+      }
+    ],
+    "aircraft": [
+      {
+        "id": "AC000",
+        "ac_type": "TRANSPORT-B",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 3536,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.906,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": [
+          [
+            60,
+            66
+          ]
+        ]
+      },
+      {
+        "id": "AC001",
+        "ac_type": "HELO-C",
+        "base_id": "BASE-B",
+        "weapon_loads": [],
+        "range_km": 714,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.789,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC002",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-C",
+        "weapon_loads": [
+          "AA",
+          "CAP"
+        ],
+        "range_km": 1542,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.892,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC003",
+        "ac_type": "ISR-D",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 2571,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.818,
+        "available_from": 28,
+        "available_until": 96,
+        "outages": [
+          [
+            17,
+            32
+          ]
+        ]
+      },
+      {
+        "id": "AC004",
+        "ac_type": "ISR-D",
+        "base_id": "BASE-B",
+        "weapon_loads": [],
+        "range_km": 2205,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.916,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC005",
+        "ac_type": "HELO-C",
+        "base_id": "BASE-C",
+        "weapon_loads": [],
+        "range_km": 620,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.871,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC006",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-A",
+        "weapon_loads": [
+          "CAP",
+          "AA"
+        ],
+        "range_km": 1249,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.84,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC007",
+        "ac_type": "ISR-D",
+        "base_id": "BASE-B",
+        "weapon_loads": [],
+        "range_km": 2448,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.902,
+        "available_from": 22,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC008",
+        "ac_type": "TRANSPORT-B",
+        "base_id": "BASE-C",
+        "weapon_loads": [],
+        "range_km": 3308,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.81,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": [
+          [
+            19,
+            33
+          ]
+        ]
+      },
+      {
+        "id": "AC009",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-A",
+        "weapon_loads": [
+          "CAP",
+          "AG"
+        ],
+        "range_km": 1404,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.85,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC010",
+        "ac_type": "HELO-C",
+        "base_id": "BASE-B",
+        "weapon_loads": [],
+        "range_km": 496,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.799,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC011",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-C",
+        "weapon_loads": [
+          "AA",
+          "CAP"
+        ],
+        "range_km": 1638,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.842,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC012",
+        "ac_type": "HELO-C",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 586,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.923,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC013",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-B",
+        "weapon_loads": [
+          "AG",
+          "CAP"
+        ],
+        "range_km": 1300,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.803,
+        "available_from": 30,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC014",
+        "ac_type": "TRANSPORT-B",
+        "base_id": "BASE-C",
+        "weapon_loads": [],
+        "range_km": 3286,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.86,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC015",
+        "ac_type": "ISR-D",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 2166,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.86,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC016",
+        "ac_type": "TRANSPORT-B",
+        "base_id": "BASE-B",
+        "weapon_loads": [],
+        "range_km": 2916,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.89,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC017",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-C",
+        "weapon_loads": [
+          "CAP",
+          "AG"
+        ],
+        "range_km": 1774,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.81,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC018",
+        "ac_type": "HELO-C",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 536,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.877,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC019",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-B",
+        "weapon_loads": [
+          "AA",
+          "CAP"
+        ],
+        "range_km": 1451,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.854,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC020",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-C",
+        "weapon_loads": [
+          "CAP",
+          "AA"
+        ],
+        "range_km": 1473,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.954,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": [
+          [
+            15,
+            160
+          ]
+        ]
+      },
+      {
+        "id": "AC021",
+        "ac_type": "ISR-D",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 2559,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.86,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC022",
+        "ac_type": "TRANSPORT-B",
+        "base_id": "BASE-B",
+        "weapon_loads": [],
+        "range_km": 2880,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.818,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC023",
+        "ac_type": "FIGHTER-A",
+        "base_id": "BASE-C",
+        "weapon_loads": [
+          "AA",
+          "AG"
+        ],
+        "range_km": 1560,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.8,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "AC024",
+        "ac_type": "TRANSPORT-B",
+        "base_id": "BASE-A",
+        "weapon_loads": [],
+        "range_km": 3538,
+        "turnaround_slots": 2,
+        "p_serviceable": 0.903,
+        "available_from": 12,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "TAC0F",
+        "ac_type": "FIGHTER-A",
+        "base_id": "TB0",
+        "weapon_loads": [
+          "TL0A"
+        ],
+        "range_km": 100,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.95,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "TAC0I",
+        "ac_type": "ISR-D",
+        "base_id": "TB0",
+        "weapon_loads": [
+          "TL0I"
+        ],
+        "range_km": 100,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.95,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "TAC1F",
+        "ac_type": "FIGHTER-A",
+        "base_id": "TB1",
+        "weapon_loads": [
+          "TL1A"
+        ],
+        "range_km": 100,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.95,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      },
+      {
+        "id": "TAC1I",
+        "ac_type": "ISR-D",
+        "base_id": "TB1",
+        "weapon_loads": [
+          "TL1I"
+        ],
+        "range_km": 100,
+        "turnaround_slots": 3,
+        "p_serviceable": 0.95,
+        "available_from": 0,
+        "available_until": 96,
+        "outages": []
+      }
+    ],
+    "crew": [
+      {
+        "id": "CR000",
+        "base_id": "BASE-A",
+        "ratings": [
+          "FIGHTER-A",
+          "ISR-D"
+        ],
+        "duty_slots_used": 11,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR001",
+        "base_id": "BASE-A",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 3,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR002",
+        "base_id": "BASE-A",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 14,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR003",
+        "base_id": "BASE-A",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 4,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR004",
+        "base_id": "BASE-A",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 8,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR005",
+        "base_id": "BASE-A",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 16,
+        "max_duty_slots": 48,
+        "rest_until": 20,
+        "outages": []
+      },
+      {
+        "id": "CR006",
+        "base_id": "BASE-A",
+        "ratings": [
+          "ISR-D"
+        ],
+        "duty_slots_used": 0,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR007",
+        "base_id": "BASE-A",
+        "ratings": [
+          "ISR-D",
+          "HELO-C"
+        ],
+        "duty_slots_used": 2,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR008",
+        "base_id": "BASE-A",
+        "ratings": [
+          "ISR-D",
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 5,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR009",
+        "base_id": "BASE-A",
+        "ratings": [
+          "ISR-D",
+          "HELO-C"
+        ],
+        "duty_slots_used": 16,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR010",
+        "base_id": "BASE-A",
+        "ratings": [
+          "ISR-D",
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 7,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR011",
+        "base_id": "BASE-A",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 7,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR012",
+        "base_id": "BASE-A",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 0,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR013",
+        "base_id": "BASE-A",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 15,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR014",
+        "base_id": "BASE-B",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 11,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR015",
+        "base_id": "BASE-B",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 11,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR016",
+        "base_id": "BASE-B",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 7,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR017",
+        "base_id": "BASE-B",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 10,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR018",
+        "base_id": "BASE-B",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 0,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR019",
+        "base_id": "BASE-B",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 2,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR020",
+        "base_id": "BASE-B",
+        "ratings": [
+          "ISR-D",
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 6,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR021",
+        "base_id": "BASE-B",
+        "ratings": [
+          "ISR-D",
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 10,
+        "max_duty_slots": 48,
+        "rest_until": 16,
+        "outages": []
+      },
+      {
+        "id": "CR022",
+        "base_id": "BASE-B",
+        "ratings": [
+          "ISR-D"
+        ],
+        "duty_slots_used": 2,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR023",
+        "base_id": "BASE-B",
+        "ratings": [
+          "TRANSPORT-B",
+          "HELO-C"
+        ],
+        "duty_slots_used": 0,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR024",
+        "base_id": "BASE-B",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 4,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR025",
+        "base_id": "BASE-B",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 15,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR026",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 4,
+        "max_duty_slots": 48,
+        "rest_until": 7,
+        "outages": []
+      },
+      {
+        "id": "CR027",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 4,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR028",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 6,
+        "max_duty_slots": 48,
+        "rest_until": 10,
+        "outages": [
+          [
+            15,
+            39
+          ]
+        ]
+      },
+      {
+        "id": "CR029",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A",
+          "HELO-C"
+        ],
+        "duty_slots_used": 10,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR030",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 4,
+        "max_duty_slots": 48,
+        "rest_until": 15,
+        "outages": []
+      },
+      {
+        "id": "CR031",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 16,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR032",
+        "base_id": "BASE-C",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 16,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR033",
+        "base_id": "BASE-C",
+        "ratings": [
+          "HELO-C",
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 14,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR034",
+        "base_id": "BASE-C",
+        "ratings": [
+          "HELO-C"
+        ],
+        "duty_slots_used": 4,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR035",
+        "base_id": "BASE-C",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 3,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR036",
+        "base_id": "BASE-C",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 16,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "CR037",
+        "base_id": "BASE-C",
+        "ratings": [
+          "TRANSPORT-B"
+        ],
+        "duty_slots_used": 3,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "TCR0X",
+        "base_id": "TB0",
+        "ratings": [
+          "FIGHTER-A",
+          "ISR-D"
+        ],
+        "duty_slots_used": 0,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "TCR0Y",
+        "base_id": "TB0",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 8,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "TCR1X",
+        "base_id": "TB1",
+        "ratings": [
+          "FIGHTER-A",
+          "ISR-D"
+        ],
+        "duty_slots_used": 0,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      },
+      {
+        "id": "TCR1Y",
+        "base_id": "TB1",
+        "ratings": [
+          "FIGHTER-A"
+        ],
+        "duty_slots_used": 8,
+        "max_duty_slots": 48,
+        "rest_until": 0,
+        "outages": []
+      }
+    ],
+    "missions": [
+      {
+        "id": "M000",
+        "priority": 2,
+        "value": 55,
+        "ac_type": "FIGHTER-A",
+        "earliest": 8,
+        "latest": 19,
+        "duration_slots": 6,
+        "sector": "CHARLIE",
+        "distance_km": 541,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M001",
+        "priority": 3,
+        "value": 38,
+        "ac_type": "HELO-C",
+        "earliest": 20,
+        "latest": 34,
+        "duration_slots": 8,
+        "sector": "CHARLIE",
+        "distance_km": 253,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M002",
+        "priority": 3,
+        "value": 32,
+        "ac_type": "FIGHTER-A",
+        "earliest": 17,
+        "latest": 26,
+        "duration_slots": 5,
+        "sector": "BRAVO",
+        "distance_km": 261,
+        "weapon_load": "AA",
+        "weather_limit": 2,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M003",
+        "priority": 3,
+        "value": 38,
+        "ac_type": "HELO-C",
+        "earliest": 18,
+        "latest": 32,
+        "duration_slots": 8,
+        "sector": "CHARLIE",
+        "distance_km": 162,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M004",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "FIGHTER-A",
+        "earliest": 17,
+        "latest": 30,
+        "duration_slots": 7,
+        "sector": "BRAVO",
+        "distance_km": 101,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M005",
+        "priority": 3,
+        "value": 36,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 16,
+        "latest": 43,
+        "duration_slots": 15,
+        "sector": "BRAVO",
+        "distance_km": 1133,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M006",
+        "priority": 4,
+        "value": 19,
+        "ac_type": "FIGHTER-A",
+        "earliest": 10,
+        "latest": 26,
+        "duration_slots": 9,
+        "sector": "ALPHA",
+        "distance_km": 247,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M007",
+        "priority": 5,
+        "value": 10,
+        "ac_type": "ISR-D",
+        "earliest": 12,
+        "latest": 37,
+        "duration_slots": 14,
+        "sector": "BRAVO",
+        "distance_km": 273,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M008",
+        "priority": 4,
+        "value": 21,
+        "ac_type": "ISR-D",
+        "earliest": 16,
+        "latest": 39,
+        "duration_slots": 13,
+        "sector": "BRAVO",
+        "distance_km": 897,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M009",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "FIGHTER-A",
+        "earliest": 23,
+        "latest": 32,
+        "duration_slots": 5,
+        "sector": "BRAVO",
+        "distance_km": 144,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M010",
+        "priority": 2,
+        "value": 62,
+        "ac_type": "FIGHTER-A",
+        "earliest": 24,
+        "latest": 42,
+        "duration_slots": 10,
+        "sector": "BRAVO",
+        "distance_km": 636,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M011",
+        "priority": 3,
+        "value": 37,
+        "ac_type": "FIGHTER-A",
+        "earliest": 8,
+        "latest": 26,
+        "duration_slots": 10,
+        "sector": "BRAVO",
+        "distance_km": 187,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M012",
+        "priority": 2,
+        "value": 59,
+        "ac_type": "FIGHTER-A",
+        "earliest": 11,
+        "latest": 33,
+        "duration_slots": 12,
+        "sector": "DELTA",
+        "distance_km": 671,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M013",
+        "priority": 3,
+        "value": 35,
+        "ac_type": "HELO-C",
+        "earliest": 15,
+        "latest": 31,
+        "duration_slots": 9,
+        "sector": "ALPHA",
+        "distance_km": 216,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M014",
+        "priority": 5,
+        "value": 11,
+        "ac_type": "FIGHTER-A",
+        "earliest": 24,
+        "latest": 35,
+        "duration_slots": 6,
+        "sector": "ALPHA",
+        "distance_km": 638,
+        "weapon_load": "CAP",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M015",
+        "priority": 3,
+        "value": 37,
+        "ac_type": "FIGHTER-A",
+        "earliest": 10,
+        "latest": 19,
+        "duration_slots": 5,
+        "sector": "BRAVO",
+        "distance_km": 310,
+        "weapon_load": "CAP",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M016",
+        "priority": 4,
+        "value": 21,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 15,
+        "latest": 47,
+        "duration_slots": 18,
+        "sector": "ALPHA",
+        "distance_km": 1081,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M017",
+        "priority": 5,
+        "value": 11,
+        "ac_type": "FIGHTER-A",
+        "earliest": 17,
+        "latest": 31,
+        "duration_slots": 8,
+        "sector": "BRAVO",
+        "distance_km": 179,
+        "weapon_load": "AG",
+        "weather_limit": 2,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M018",
+        "priority": 2,
+        "value": 62,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 19,
+        "latest": 44,
+        "duration_slots": 14,
+        "sector": "BRAVO",
+        "distance_km": 125,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M019",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "FIGHTER-A",
+        "earliest": 23,
+        "latest": 41,
+        "duration_slots": 10,
+        "sector": "ALPHA",
+        "distance_km": 322,
+        "weapon_load": "AG",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M020",
+        "priority": 3,
+        "value": 35,
+        "ac_type": "FIGHTER-A",
+        "earliest": 17,
+        "latest": 31,
+        "duration_slots": 8,
+        "sector": "DELTA",
+        "distance_km": 221,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M021",
+        "priority": 3,
+        "value": 38,
+        "ac_type": "FIGHTER-A",
+        "earliest": 17,
+        "latest": 30,
+        "duration_slots": 7,
+        "sector": "DELTA",
+        "distance_km": 117,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M022",
+        "priority": 2,
+        "value": 66,
+        "ac_type": "FIGHTER-A",
+        "earliest": 22,
+        "latest": 31,
+        "duration_slots": 5,
+        "sector": "DELTA",
+        "distance_km": 314,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M023",
+        "priority": 5,
+        "value": 10,
+        "ac_type": "ISR-D",
+        "earliest": 9,
+        "latest": 32,
+        "duration_slots": 13,
+        "sector": "BRAVO",
+        "distance_km": 636,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M024",
+        "priority": 2,
+        "value": 61,
+        "ac_type": "FIGHTER-A",
+        "earliest": 12,
+        "latest": 25,
+        "duration_slots": 7,
+        "sector": "CHARLIE",
+        "distance_km": 215,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M025",
+        "priority": 2,
+        "value": 59,
+        "ac_type": "ISR-D",
+        "earliest": 23,
+        "latest": 45,
+        "duration_slots": 12,
+        "sector": "BRAVO",
+        "distance_km": 107,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M026",
+        "priority": 4,
+        "value": 20,
+        "ac_type": "FIGHTER-A",
+        "earliest": 22,
+        "latest": 36,
+        "duration_slots": 8,
+        "sector": "BRAVO",
+        "distance_km": 526,
+        "weapon_load": "AG",
+        "weather_limit": 2,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M027",
+        "priority": 3,
+        "value": 32,
+        "ac_type": "HELO-C",
+        "earliest": 18,
+        "latest": 29,
+        "duration_slots": 6,
+        "sector": "CHARLIE",
+        "distance_km": 201,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M028",
+        "priority": 3,
+        "value": 36,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 11,
+        "latest": 40,
+        "duration_slots": 16,
+        "sector": "CHARLIE",
+        "distance_km": 618,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M029",
+        "priority": 2,
+        "value": 59,
+        "ac_type": "HELO-C",
+        "earliest": 20,
+        "latest": 25,
+        "duration_slots": 3,
+        "sector": "ALPHA",
+        "distance_km": 192,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M030",
+        "priority": 3,
+        "value": 37,
+        "ac_type": "HELO-C",
+        "earliest": 16,
+        "latest": 25,
+        "duration_slots": 5,
+        "sector": "CHARLIE",
+        "distance_km": 126,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M031",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "FIGHTER-A",
+        "earliest": 29,
+        "latest": 38,
+        "duration_slots": 5,
+        "sector": "BRAVO",
+        "distance_km": 355,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M032",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "ISR-D",
+        "earliest": 18,
+        "latest": 36,
+        "duration_slots": 10,
+        "sector": "CHARLIE",
+        "distance_km": 976,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M033",
+        "priority": 4,
+        "value": 20,
+        "ac_type": "FIGHTER-A",
+        "earliest": 28,
+        "latest": 41,
+        "duration_slots": 7,
+        "sector": "BRAVO",
+        "distance_km": 182,
+        "weapon_load": "CAP",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M034",
+        "priority": 5,
+        "value": 11,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 17,
+        "latest": 40,
+        "duration_slots": 13,
+        "sector": "CHARLIE",
+        "distance_km": 1094,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M035",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 12,
+        "latest": 34,
+        "duration_slots": 12,
+        "sector": "DELTA",
+        "distance_km": 803,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M036",
+        "priority": 2,
+        "value": 63,
+        "ac_type": "FIGHTER-A",
+        "earliest": 16,
+        "latest": 34,
+        "duration_slots": 10,
+        "sector": "CHARLIE",
+        "distance_km": 515,
+        "weapon_load": "AG",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M037",
+        "priority": 2,
+        "value": 59,
+        "ac_type": "FIGHTER-A",
+        "earliest": 29,
+        "latest": 40,
+        "duration_slots": 6,
+        "sector": "BRAVO",
+        "distance_km": 265,
+        "weapon_load": "CAP",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M038",
+        "priority": 3,
+        "value": 35,
+        "ac_type": "FIGHTER-A",
+        "earliest": 23,
+        "latest": 36,
+        "duration_slots": 7,
+        "sector": "DELTA",
+        "distance_km": 440,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M039",
+        "priority": 2,
+        "value": 61,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 12,
+        "latest": 30,
+        "duration_slots": 10,
+        "sector": "BRAVO",
+        "distance_km": 285,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M040",
+        "priority": 2,
+        "value": 55,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 25,
+        "latest": 41,
+        "duration_slots": 9,
+        "sector": "BRAVO",
+        "distance_km": 854,
+        "weapon_load": null,
+        "weather_limit": 2,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M041",
+        "priority": 1,
+        "value": 94,
+        "ac_type": "ISR-D",
+        "earliest": 17,
+        "latest": 42,
+        "duration_slots": 14,
+        "sector": "ALPHA",
+        "distance_km": 945,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M042",
+        "priority": 3,
+        "value": 33,
+        "ac_type": "FIGHTER-A",
+        "earliest": 24,
+        "latest": 40,
+        "duration_slots": 9,
+        "sector": "CHARLIE",
+        "distance_km": 446,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M043",
+        "priority": 2,
+        "value": 66,
+        "ac_type": "FIGHTER-A",
+        "earliest": 26,
+        "latest": 40,
+        "duration_slots": 8,
+        "sector": "BRAVO",
+        "distance_km": 615,
+        "weapon_load": "AA",
+        "weather_limit": 2,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M044",
+        "priority": 4,
+        "value": 20,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 11,
+        "latest": 43,
+        "duration_slots": 18,
+        "sector": "DELTA",
+        "distance_km": 984,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M045",
+        "priority": 3,
+        "value": 32,
+        "ac_type": "TRANSPORT-B",
+        "earliest": 8,
+        "latest": 35,
+        "duration_slots": 15,
+        "sector": "DELTA",
+        "distance_km": 1069,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 1
+      },
+      {
+        "id": "M046",
+        "priority": 3,
+        "value": 32,
+        "ac_type": "ISR-D",
+        "earliest": 15,
+        "latest": 47,
+        "duration_slots": 18,
+        "sector": "DELTA",
+        "distance_km": 1058,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M047",
+        "priority": 3,
+        "value": 37,
+        "ac_type": "FIGHTER-A",
+        "earliest": 15,
+        "latest": 26,
+        "duration_slots": 6,
+        "sector": "BRAVO",
+        "distance_km": 258,
+        "weapon_load": "CAP",
+        "weather_limit": 2,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M048",
+        "priority": 4,
+        "value": 21,
+        "ac_type": "ISR-D",
+        "earliest": 13,
+        "latest": 53,
+        "duration_slots": 22,
+        "sector": "DELTA",
+        "distance_km": 274,
+        "weapon_load": null,
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "M049",
+        "priority": 5,
+        "value": 9,
+        "ac_type": "FIGHTER-A",
+        "earliest": 9,
+        "latest": 22,
+        "duration_slots": 7,
+        "sector": "BRAVO",
+        "distance_km": 338,
+        "weapon_load": "AA",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "TRAP0-A",
+        "priority": 1,
+        "value": 100,
+        "ac_type": "FIGHTER-A",
+        "earliest": 38,
+        "latest": 54,
+        "duration_slots": 14,
+        "sector": "TRAP0",
+        "distance_km": 40,
+        "weapon_load": "TL0A",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "TRAP0-B",
+        "priority": 2,
+        "value": 60,
+        "ac_type": "ISR-D",
+        "earliest": 38,
+        "latest": 45,
+        "duration_slots": 5,
+        "sector": "TRAP0",
+        "distance_km": 40,
+        "weapon_load": "TL0I",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "TRAP0-C",
+        "priority": 2,
+        "value": 60,
+        "ac_type": "ISR-D",
+        "earliest": 46,
+        "latest": 53,
+        "duration_slots": 5,
+        "sector": "TRAP0",
+        "distance_km": 40,
+        "weapon_load": "TL0I",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "TRAP1-A",
+        "priority": 1,
+        "value": 100,
+        "ac_type": "FIGHTER-A",
+        "earliest": 23,
+        "latest": 39,
+        "duration_slots": 14,
+        "sector": "TRAP1",
+        "distance_km": 40,
+        "weapon_load": "TL1A",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "TRAP1-B",
+        "priority": 2,
+        "value": 60,
+        "ac_type": "ISR-D",
+        "earliest": 23,
+        "latest": 30,
+        "duration_slots": 5,
+        "sector": "TRAP1",
+        "distance_km": 40,
+        "weapon_load": "TL1I",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      },
+      {
+        "id": "TRAP1-C",
+        "priority": 2,
+        "value": 60,
+        "ac_type": "ISR-D",
+        "earliest": 31,
+        "latest": 38,
+        "duration_slots": 5,
+        "sector": "TRAP1",
+        "distance_km": 40,
+        "weapon_load": "TL1I",
+        "weather_limit": 4,
+        "risk_tolerance": 3
+      }
+    ],
+    "threats": [],
+    "weather": {
+      "ALPHA": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "BRAVO": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CHARLIE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "DELTA": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "now": 15,
+    "crew_rest_slots": 2,
+    "slot_minutes": 15
+  }
+}

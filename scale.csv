@@ -1,0 +1,7 @@
+size,tightness,seed,event,traps,missions,greedy_n,greedy_value,greedy_ms,greedy_viol,opt_n,opt_value,opt_ms,opt_status,opt_viol,opt_gap_pct,affected,patch_retained,patch_changed,patch_ms,patch_viol,patch_status,scratch_retained,scratch_changed,scratch_ms,scratch_viol,scratch_status,minchurn_retained,minchurn_changed,minchurn_ms,minchurn_viol,minchurn_status
+L,0.9,0,aircraft_out,0,100,85,4155,7.9,0,93,4292,30638.3,FEASIBLE,0,2.31,3,97.93,3,39.3,0,GREEDY,99.3,74,30534.3,0,FEASIBLE,98.67,5,5253.8,0,FEASIBLE
+L,0.9,1,aircraft_out,0,100,79,3521,21.8,0,88,3663,30404.7,FEASIBLE,0,1.44,3,100.0,3,8.3,0,GREEDY,100.0,66,30304.8,0,FEASIBLE,100.0,3,1751.4,0,OPTIMAL
+L,0.9,2,aircraft_out,0,100,82,3624,20.9,0,91,3751,30363.1,FEASIBLE,0,3.12,3,97.2,3,15.4,0,GREEDY,99.97,72,30375.0,0,FEASIBLE,99.49,6,2701.6,0,OPTIMAL
+XL,0.9,0,aircraft_out,0,250,206,8901,74.1,0,211,8979,31146.5,FEASIBLE,0,6.3,4,100.0,4,14.9,0,GREEDY,101.29,160,30894.3,0,FEASIBLE,100.0,5,3606.5,0,OPTIMAL
+XL,0.9,1,aircraft_out,0,250,191,8239,69.9,0,199,8330,31087.9,FEASIBLE,0,5.23,4,100.12,4,14.9,0,GREEDY,100.83,148,30799.1,0,FEASIBLE,100.12,4,2279.4,0,OPTIMAL
+XL,0.9,2,aircraft_out,0,250,183,7848,66.8,0,197,8093,31223.5,FEASIBLE,0,4.69,3,100.0,3,16.6,0,GREEDY,99.96,146,31013.3,0,FEASIBLE,100.0,3,5271.5,0,FEASIBLE
