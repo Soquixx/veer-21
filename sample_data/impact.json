@@ -1,0 +1,145 @@
+{
+  "now": 15,
+  "impact": {
+    "directly_affected": [
+      "M002",
+      "M004",
+      "M005",
+      "M008",
+      "M009",
+      "M022",
+      "M031",
+      "M037",
+      "M039",
+      "M047"
+    ],
+    "ripple": [
+      "M010",
+      "M033",
+      "M038",
+      "M040",
+      "M042",
+      "M043",
+      "M046"
+    ],
+    "reasons": {
+      "M004": [
+        "WEATHER"
+      ],
+      "M039": [
+        "WEATHER"
+      ],
+      "M047": [
+        "WEATHER"
+      ],
+      "M002": [
+        "CREW_OUTAGE",
+        "WEATHER"
+      ],
+      "M009": [
+        "WEATHER"
+      ],
+      "M008": [
+        "WEATHER"
+      ],
+      "M005": [
+        "WEATHER"
+      ],
+      "M022": [
+        "AIRCRAFT_OUTAGE"
+      ],
+      "M031": [
+        "CREW_OUTAGE"
+      ],
+      "M037": [
+        "AIRCRAFT_OUTAGE"
+      ]
+    },
+    "resources": {
+      "aircraft": [
+        "AC006",
+        "AC011",
+        "AC015",
+        "AC016",
+        "AC019",
+        "AC020",
+        "AC023",
+        "AC024"
+      ],
+      "crew": [
+        "CR007",
+        "CR008",
+        "CR013",
+        "CR015",
+        "CR025",
+        "CR027",
+        "CR028",
+        "CR029",
+        "CR033"
+      ],
+      "bases": [
+        "BASE-A",
+        "BASE-B",
+        "BASE-C"
+      ]
+    },
+    "value_at_risk": 411,
+    "violations": [
+      {
+        "kind": "WEATHER",
+        "mission_id": "M004",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M039",
+        "detail": "weather above limit 2 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M047",
+        "detail": "weather above limit 2 in BRAVO"
+      },
+      {
+        "kind": "CREW_OUTAGE",
+        "mission_id": "M002",
+        "detail": "CR028 unavailable during sortie"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M002",
+        "detail": "weather above limit 2 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M009",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M008",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "WEATHER",
+        "mission_id": "M005",
+        "detail": "weather above limit 4 in BRAVO"
+      },
+      {
+        "kind": "AIRCRAFT_OUTAGE",
+        "mission_id": "M022",
+        "detail": "AC020 unavailable during sortie"
+      },
+      {
+        "kind": "CREW_OUTAGE",
+        "mission_id": "M031",
+        "detail": "CR028 unavailable during sortie"
+      },
+      {
+        "kind": "AIRCRAFT_OUTAGE",
+        "mission_id": "M037",
+        "detail": "AC020 unavailable during sortie"
+      }
+    ]
+  }
+}
